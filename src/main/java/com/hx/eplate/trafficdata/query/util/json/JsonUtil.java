@@ -64,4 +64,19 @@ public class JsonUtil {
 
         return jsonUtil;
     }
+
+    /**
+     * 常规返回数据
+     * @param message 返回说明
+     * @param integer 状态
+     * @param jsonUtil 参数
+     * @return
+     */
+    public static JsonUtil setAddUptParameter(String message,Integer integer, JsonUtil jsonUtil){
+        jsonUtil.getInfo().setMessage(message);
+        jsonUtil.getInfo().setStatus(integer);
+        jsonUtil.getInfo().setTimestamp(String.valueOf(System.currentTimeMillis()));
+
+        return jsonUtil;
+    }
 }
