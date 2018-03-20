@@ -10,7 +10,7 @@
     hostname: ${spring.cloud.client.ipAddress}
 
 server:
-  port: 8000
+  port: 8001
 spring:
   application:
     name: spring-cloud-producer
