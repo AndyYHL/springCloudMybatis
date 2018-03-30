@@ -79,7 +79,7 @@
 		AND isdelete =1 GROUP BY rfid_id ) a)b
 		WHERE 1=1
 		<if test="data != null">
-			<if test="data.rfid_name != null "> AND rfid_name = #{data.rfid_name}</if>
+			<if test="data.rfid_name != null and data.rfid_name != ''"> AND rfid_name = #{data.rfid_name}</if>
 		</if>
 	</select>
 
